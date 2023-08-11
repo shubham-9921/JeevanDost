@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .title{
+      font-size: 3rem !important;
+      font-weight: 800 !important;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+
+      color: #8062D6;
+    }
+
+    .text{
+      font-size: 1.5rem !important;
+      font-weight: 500 !important;
+      margin: 1rem 0rem 2rem !important;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "insurance/navbar.html" %}
+  <br><br>
+  <div class="jumbotron text-center" style="margin-bottom:0px;">
+  
+    <p class="lead title">Welcome to Jeevan Dost</p>
+    <hr class="my-4">
+    <p class="text">You can access various features after Login.</p>
+    <p class="lead">
+      <a class="btn btn-outline-success btn mx-3" href="customersignup" role="button">Create Your Account</a>
+      <a class="btn btn-outline-warning btn mx-3" href="customerlogin" role="button">Login</a>
+    </p>
+    <br><br><br>
+  </div>
+ 
+  {% include "insurance/footer.html" %}
+</body>
+
+</html>

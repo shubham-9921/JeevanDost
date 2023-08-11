@@ -1,0 +1,31 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      .logout{
+
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+        width: 50rem;
+        height: 30rem;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "insurance/navbar.html" %}
+    <br><br><br><br><br>
+<img src="{% static 'image/logout_img.png' %}"  class="logout">
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br>
+{% include "insurance/footer.html" %}
+
+  </body>
+</html>
