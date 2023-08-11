@@ -1,4 +1,4 @@
 echo "BUILD START"
-pip insatll -r requirements.txt
-manage.py collectstatic --noinput --clear
+python -m pip insatll -r requirements.txt
+python manage.py collectstatic --noinput --clear
 echo "BUILD END"
